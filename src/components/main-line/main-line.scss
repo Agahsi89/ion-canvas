@@ -1,0 +1,41 @@
+main-line{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 70px;
+	height: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 5px;
+	.bg{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 5px;
+		background-color: green;
+		z-index: 0;
+	}
+	.line{
+		height: 3px;
+		width: 100%;
+		background-color: gray;
+		z-index: 1;
+	}
+	.shapes{
+		position: absolute;
+		height: 165px;
+		width: 165px;
+		align-self:flex-end;
+		margin-left: 2px;
+		margin-top: 3px;
+		&.invers{
+			transform: scale(-1);
+			align-self: flex-start;
+			margin-left: -2px;
+			margin-top: -3px
+		}
+	}
+}

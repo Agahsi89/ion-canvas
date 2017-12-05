@@ -1,0 +1,2 @@
+<div *ngIf="selected" class="bg"></div>
+<side-line [ngClass]="{'over':line.over }" *ngFor="let line of lines" [style.transform]="'rotate('+line.r+'deg)'"></side-line>

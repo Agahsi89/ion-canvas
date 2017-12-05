@@ -1,0 +1,13 @@
+side-line{
+	height: 5px;
+	width: 70px;
+	position: absolute;
+	background-color: green;
+	top: 8px;
+    left: 10px;
+	transform-origin: left;
+	opacity: 0.5;
+	&.over{
+		opacity: 1;
+	}
+}
