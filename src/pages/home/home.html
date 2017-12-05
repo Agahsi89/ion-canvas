@@ -9,8 +9,10 @@
 <ion-content padding>
   
   <canvas-draw (draw)="draw($event)"></canvas-draw>
+
   <div class = "drow-space">
       <item *ngFor="let item of items" [data]="item" [style.top]="item.y+'px'" [style.transform]="'rotate('+item.r+'deg)'" [style.left]="item.x+'px'"(create_shape)="createShape($event,item)">
       </item>
   </div>
+  
 </ion-content>
